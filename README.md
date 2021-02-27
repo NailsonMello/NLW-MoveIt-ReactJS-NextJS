@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## *** Move.It *** <h2>Developed during Next Level Week - RocketSeat</h2>
 
-## Getting Started
+### What was used for implementation?
 
-First, run the development server:
+* Next.JS
+* React.JS ⚛️
+* TypeScript
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Screens
+| | | 
+|:-------------------------:|:-------------------------:|
+|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="./home-dark.PNG">  Home Dark |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="./home-dark-modal.PNG"> Home Dark Modal|
+|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="./home-light.PNG"> Home Light|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="./home-light-modal.PNG"> Home Light Modal |
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screens mobile
+| | | 
+|:-------------------------:|:-------------------------:|
+| <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="./home-mobile-dark.PNG">  Home Dark Mobile | <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="./home-mobile-dark-modal.PNG">  Home Dark Mobile Modal | 
+| <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="./home-mobile-light.PNG">  Home Light Mobile | <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="./home-mobile-light-modal.PNG">  Home Light Mobile Modal | 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Basic Setup
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+To run demo: clone repo and run `npm install || yarn install && npm run dev || yarn dev`
+and open `http://localhost:3000`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
