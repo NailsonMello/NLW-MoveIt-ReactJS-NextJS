@@ -11,6 +11,7 @@ import styles from '../styles/pages/Home.module.css';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 import { CountdownProvider } from '../contexts/CountdownContext';
 import { ButtonTheme } from '../components/ButtonTheme';
+import { ThemeProvider } from '../contexts/ThemeContext';
 
 interface HomeProps {
   level: number;
@@ -26,7 +27,6 @@ export default function Home(props: HomeProps) {
       level={props.level}
       currentExperience={props.currentExperience}
       challengesCompleted={props.challengesCompleted}
-      themeName={props.themeName}
     >
       <div className={styles.container}>
         <Head>
@@ -48,13 +48,17 @@ export default function Home(props: HomeProps) {
           </section>
         </CountdownProvider>
       </div>
-      <ButtonTheme />
+      <ThemeProvider
+        themeName={props.themeName}
+      >
+        <ButtonTheme />
+      </ThemeProvider>
     </ChallengesProvider>
   );
 }
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const { level, currentExperience, challengesCompleted, themeName } = ctx.req.cookies;
+  const { level, currentExperience, challengesCompleted, themeName = "dark"} = ctx.req.cookies;
 
   return {
     props: {
