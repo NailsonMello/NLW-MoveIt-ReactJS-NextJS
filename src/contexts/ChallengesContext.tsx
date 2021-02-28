@@ -60,8 +60,11 @@ export function ChallengesProvider({
         Cookies.set('level', String(level))
         Cookies.set('currentExperience', String(currentExperience))
         Cookies.set('challengesCompleted', String(challengesCompleted))
+    }, [level, currentExperience, challengesCompleted])
+
+    useEffect(() => {
         Cookies.set('themeName', String(themeName))
-    }, [level, currentExperience, challengesCompleted, themeName])
+    }, [themeName])
 
     function handleUpdateTheme() {
         if (theme === Themes[1]) {
